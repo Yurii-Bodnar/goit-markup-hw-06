@@ -258,6 +258,7 @@ ul {
 .hero-icon-close {
   width: 30px;
   height: 30px;
+  transition: var(--anim);
 }
 .hero-button-close {
   display: flex;
@@ -276,8 +277,8 @@ ul {
   background-color: var(--main-white-color);
   cursor: pointer;
   outline: 1px solid rgba(0, 0, 0, 0.1);
-  transition: var(--anim);
 }
+.hero-button-close:hover .hero-icon-close,
 .hero-button-close:hover .hero-icon-close {
   fill: var(--accent-color);
 }
@@ -294,7 +295,7 @@ ul {
 }
 .lable-form {
   display: block;
-  padding: 0px 40px 12px;
+  padding: 0px 40px 10px;
 }
 .name-span-form {
   display: block;
@@ -304,7 +305,7 @@ ul {
   font-weight: 400;
   font-size: 12px;
   line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 .name-form {
@@ -346,12 +347,12 @@ ul {
   transform: translateY(-50%);
   margin-left: 14px;
 
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
 }
 .checkbox-label {
   display: flex;
-  padding: 10px 40px 30px;
+  padding: 10px 40px 30px 50px;
   align-items: center;
 }
 .checkbox-name {
@@ -394,8 +395,9 @@ ul {
 .send-form {
   width: 200px;
   height: 50px;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -696,7 +698,7 @@ ul {
   fill: currentColor;
 }
 .footer-mailing {
-  margin-left: 90px;
+  margin-left: inherit;
 }
 .mailing-form {
   display: flex;
@@ -710,6 +712,11 @@ ul {
   background-color: inherit;
   padding: 15px;
   margin-right: 10px;
+}
+.footer-email,
+select,
+textarea {
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-email::placeholder {
   font-weight: 400;
